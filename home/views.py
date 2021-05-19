@@ -23,7 +23,7 @@ def handle_signup(request):
             messages.error(request, "Username can contain max 10 digits")
             return redirect('Home')
         if type_pass != conf_pass:
-            messages.error(request, "Passwords should be same in both")
+            messages.error(request, "Passwords are not matching")
             return redirect('Home')
 
         my_user = User.objects.create_user(user_name, email_add, type_pass)
