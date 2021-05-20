@@ -145,7 +145,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="signupModalLabel">Get KapTechno account</h5>
+                <h5 class="modal-title" id="signupModalLabel">SignUp to CryptoWarriors</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -160,16 +160,19 @@
                     <label for="signUsername" class="col-sm-2 col-form-label">UserName</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="signUsername" name="signUsername"
-                               placeholder="Kaptan Singh" required>
+                               placeholder="Choose your Username" required>
+                        <div id="usernameHelp" class="form-text">Choose a unique Username.</div>
                     </div>
+                    <br>
                     <div class="mb-3">
                         <label for="signPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="signPassword" name="signPassword" required>
+                        <input type="password" class="form-control" id="signPassword" name="signPassword" 
+                               placeholder="Choose your Password" required>
                     </div>
                     <div class="mb-3">
                         <label for="cSignPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="cSignPassword" name="cSignPassword"
-                               required>
+                               placeholder="Enter your Password again" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
