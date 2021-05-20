@@ -7,7 +7,13 @@ from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 
 def home_page(request):
-    return render(request, 'home/home_page.html', {})
+    import requests
+    import json
+
+    news_feed = requests.get(
+        "https://newsapi.org/v2/everything?language=en&q=bitcoin&apiKey=0753c4b3fca647808be434ba76b1c985")
+    api = json.loads(news_feed.content)
+    return render(request, 'home/home_page.html', {'api': api})
 
 
 def handle_signup(request):

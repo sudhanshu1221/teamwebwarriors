@@ -1,0 +1,24 @@
+#news {
+    /*display: block;*/
+    /*background-color: aqua;*/
+    /*height: 1000px;*/
+    /*overflow: hidden;*/
+    /*overflow-y: scroll;*/
+
+
+}
+
+a {
+
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #d68658;
+    text-decoration: underline;
+}
+
+.text-muted {
+    color: #fffde7 !important;
+}
