@@ -11,6 +11,19 @@
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Main Page</title>
+    
+    <style>
+
+
+        a{
+            color:white;
+        }
+        a:hover{
+
+color: red;
+
+        }
+    </style>
 </head>
 <body>
 
@@ -175,9 +188,10 @@
             <td>{{ question.question_text }}</td>
             <td>{{ question.publication_date }}</td>
             <td>
-                <a href="{% url 'Details' question.pk %}"> Vote</a>
-                <a href="{% url 'Results' question.pk %}"> Results</a>
-
+                  <button type="button" class="btn btn-success">
+                <a href="{% url 'Details' question.pk %}"> Vote</a></button>
+                <button type="button" class="btn btn-success">
+                <a href="{% url 'Results' question.pk %}"> Results</a></button>
 
             </td>
         </tr>
